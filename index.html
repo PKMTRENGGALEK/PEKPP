@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LKE PEKPPP</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      h4 {
+        font-weight: bold;
+      }
+
+      /* ====== Table Header Fixed Style ====== */
+      .table-fixed thead th {
+        position: sticky;
+        top: 0;
+        background-color: #3a7a27 !important;
+        color: white;
+        z-index: 2;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .table-fixed {
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+
+      /* Scroll container */
+      .table-scroll {
+        max-height: 75vh; /* tinggi maksimal tabel sesuai layar */
+        overflow-y: auto;
+        overflow-x: auto;
+        border: 1px solid #dee2e6;
+      }
+
+      .table td,
+      .table th {
+        border: 1px solid #000;
+        vertical-align: top;
+        font-size: 14px;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+
+      .aspect-title {
+        font-weight: bold;
+        color: brown;
+      }
+
+      .subaspect-title {
+        background-color: #d9d9d9;
+        font-weight: bold;
+        position: sticky;
+        top: 50px; /* agar tetap muncul di bawah header */
+        z-index: 1;
+      }
+
+      .small-link {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+
+      /* Responsif untuk perangkat kecil */
+      @media (max-width: 768px) {
+        body {
+          padding: 0.5rem;
+        }
+        h4 {
+          font-size: 1.1rem;
+        }
+        .table td,
+        .table th {
+          font-size: 12px;
+          padding: 0.3rem;
+        }
+        .table-scroll {
+          max-height: 65vh;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="p-3">
+    <div class="container-fluid">
+      <h4 class="mb-3 text-center">
+        LKE PEKPPP <br />
+        PUSKESMAS TRENGGALEK
+      </h4>
+
+      <div class="table-scroll">
+        <table class="table table-bordered table-fixed align-top shadow">
+          <thead>
+            <tr>
+              <th style="width: 40px">No</th>
+              <th style="width: 60px">Kode</th>
+              <th style="width: 300px">Prinsip/Indikator</th>
+              <th style="width: 600px">Pilihan Jawaban</th>
+              <th style="width: 80px">Nilai</th>
+              <th style="width: 120px">Bobot<br />Indikator</th>
+              <th style="width: 150px">Perhitungan<br />Aspek</th>
+              <th style="width: 80px">Unsur Bukti Dukung</th>
+              <th style="width: 80px">Panduan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Judul Aspek -->
+            <tr class="subaspect-title">
+              <td colspan="9">
+                Aspek <span class="aspect-title">Kebijakan Pelayanan</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-secondary text-white">
+                I. KEBIJAKAN PELAYANAN (9 indikator, 5 Prinsip)
+              </td>
+            </tr>
+
+            <!-- Indikator 1 -->
+            <tr>
+              <td class="bg-warning">1</td>
+              <td class="bg-warning">a.Ak</td>
+              <td class="bg-warning">
+                Tersedia Standar Pelayanan (SP) sesuai dengan ketentuan
+                peraturan perundang-undangan yang berlaku.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia Standar Pelayanan.<br />
+                1. Tersedia SP namun tidak memenuhi 14 komponen.<br />
+                2. Tersedia SP yang memenuhi 14 komponen.<br />
+                3. Tersedia SP yang memenuhi 14 komponen dan dilakukan
+                penetapan.<br />
+                4. Tersedia SP yang memenuhi 14 komponen, melibatkan masyarakat
+                dalam penyusunan SP, dan dilakukan penetapan.<br />
+                5. Tersedia SP yang memenuhi 14 komponen, melibatkan masyarakat
+                dalam penyusunan SP, dilakukan penetapan, dan dilakukan monev.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">17%</td>
+              <!-- MERGED START -->
+              <td
+                class="text-center align-middle bg-secondary text-white fw-bold"
+                rowspan="9"
+                style="font-size: 24px"
+              >
+                24%
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/10J85IjgDq4vmJZTxGrqcB3N-w4rPJmf3?usp=drive_link"
+                  class="btn btn-success btn-sm rounded shadow"
+                  target="_blank"
+                  >Upload/View</a
+                >
+              </td>
+              <!-- MERGED END -->
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/1.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 2 -->
+            <tr>
+              <td class="bg-warning">2</td>
+              <td class="bg-warning">a.P</td>
+              <td class="bg-warning">
+                Proses penyusunan dan perubahan SP telah melibatkan unsur
+                masyarakat.
+              </td>
+              <td class="bg-warning">
+                0. Penyusunan SP tanpa melibatkan unsur masyarakat dan pihak
+                terkait (stakeholder).<br />
+                1. Penyusunan SP telah melibatkan minimal 1 unsur masyarakat.<br />
+                2. Penyusunan SP telah melibatkan minimal 2 unsur masyarakat.<br />
+                3. Penyusunan SP telah melibatkan minimal 3 unsur masyarakat.<br />
+                4. Penyusunan SP telah melibatkan minimal 4 unsur masyarakat.<br />
+                5. Penyusunan SP telah melibatkan lebih dari 4 unsur masyarakat.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">14%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1dTGnMcjJLDiqIba1E2dhQbl-QD-wUBKC?usp=drive_link"
+                  class="btn btn-success btn-sm rounded shadow"
+                  target="_blank"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/2.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 3 -->
+            <tr>
+              <td class="bg-warning">3</td>
+              <td class="bg-warning">a.T</td>
+              <td class="bg-warning">
+                Jumlah media publikasi untuk komponen service delivery.
+              </td>
+              <td class="bg-warning">
+                0. Tidak ada publikasi SP.<br />
+                1. Tersedia publikasi SP hanya sebagian dari komponen service
+                delivery baik pada media cetak/non elektronik maupun media
+                elektronik.<br />
+                2. Tersedia publikasi SP seluruh komponen service delivery pada
+                2 atau lebih media publikasi namun belum dipublikasikan pada
+                SIPP Nasional.<br />
+                3. Tersedia publikasi SP seluruh komponen service delivery pada
+                2 media publikasi dan pada SIPP Nasional.<br />
+                4. Tersedia publikasi SP seluruh komponen service delivery pada
+                3 media publikasi dan pada SIPP Nasional.<br />
+                5. Tersedia publikasi SP seluruh komponen service delivery pada
+                4 atau lebih media publikasi dan pada SIPP Nasional.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">7%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1oHq-DLV-dyd1rjrdiJ_nLdP42614Oaqq?usp=drive_link"
+                  class="btn btn-success btn-sm rounded shadow"
+                  target="_blank"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/3.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 4 -->
+            <tr>
+              <td class="bg-warning">4</td>
+              <td class="bg-warning">a.K</td>
+              <td class="bg-warning">
+                Telah dilakukan peninjauan ulang secara berkala atas Standar
+                Pelayanan dan hasil peninjauan ulang tersebut telah
+                ditindaklanjuti.
+              </td>
+              <td class="bg-warning">
+                0. Tidak dilaksanakan peninjauan ulang secara berkala terhadap
+                Standar Pelayanan.<br />
+                1. Dilakukan peninjauan ulang ≥ 3 tahun atau lebih terhadap
+                seluruh jenis layanan.<br />
+                2. Dilakukan peninjauan ulang ≥ 2 tahun atau lebih terhadap
+                sebagian jenis layanan.<br />
+                3. Dilakukan peninjauan ulang ≥ 2 tahun atau lebih cepat
+                terhadap seluruh jenis layanan.<br />
+                4. Dilakukan peninjauan ulang ≥ 1 tahun atau lebih cepat
+                terhadap sebagian jenis layanan.<br />
+                5. Dilakukan peninjauan ulang ≥ 1 tahun atau lebih cepat
+                terhadap seluruh jenis layanan.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">14%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1459hNDEIrnYVs2d3sdqgM48D090nKhes?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/4.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 5 -->
+            <tr>
+              <td class="bg-warning">5</td>
+              <td class="bg-warning">a.K</td>
+              <td class="bg-warning">
+                Pemenuhan siklus Maklumat Pelayanan (ketersediaan, penetapan,
+                dan publikasi).
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia Maklumat Pelayanan.<br />
+                1. Tersedia Maklumat Pelayanan namun belum ditetapkan.<br />
+                2. Tersedia Maklumat Pelayanan yang sudah ditetapkan namun
+                isinya belum sesuai dengan peraturan perundangan.<br />
+                3. Tersedia Maklumat Pelayanan yang sudah ditetapkan dan isinya
+                telah sesuai dengan peraturan perundangan.<br />
+                4. Tersedia Maklumat Pelayanan yang sudah ditetapkan, sesuai
+                dengan peraturan perundangan, dan dipublikasikan pada media
+                non-elektronik.<br />
+                5. Tersedia Maklumat Pelayanan yang sudah ditetapkan, sesuai
+                dengan peraturan perundangan, dan dipublikasikan pada media
+                non-elektronik dan elektronik.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">10%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1rmi75zZd9pfpYFaMiHqro5WAsUKwy3Ru?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/5.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 6 -->
+            <tr>
+              <td class="bg-warning">6</td>
+              <td class="bg-warning">a.B</td>
+              <td class="bg-warning">
+                SKM yang dilaksanakan sesuai dengan Peraturan Menteri PANRB
+              </td>
+              <td class="bg-warning">
+                0. Belum melaksanakan SKM.<br />
+                1. Sudah melaksanakan SKM namun tidak sesuai dengan Peraturan
+                Menteri PANRB.<br />
+                2. Sudah melaksanakan SKM sesuai dengan Peraturan Menteri
+                PANRB.<br />
+                3. Sudah melaksanakan SKM sesuai dengan PermenPANRB yang berlaku
+                dan dipublikasikan pada media non-elektronik.<br />
+                4. Sudah melaksanakan SKM sesuai dengan PermenPANRB yang berlaku
+                dan dipublikasikan pada media elektronik.<br />
+                5. Sudah melaksanakan SKM sesuai dengan PermenPANRB yang berlaku
+                dan dipublikasikan pada media non-elektronik dan elektronik.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">17%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1RMxaOuVaQ4FfzovXBROwf4qcnvwNBmdc?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/6.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 7 -->
+            <tr>
+              <td class="bg-warning">7</td>
+              <td class="bg-warning">a.T</td>
+              <td class="bg-warning">Jumlah media publikasi hasil SKM.</td>
+              <td class="bg-warning">
+                0. Tidak dipublikasikan.<br />
+                1. Dipublikasikan sebagian dan tidak sesuai format.<br />
+                2. Dipublikasikan seluruh hasil namun tidak sesuai format.<br />
+                3. Dipublikasikan sesuai format melalui satu media.<br />
+                4. Dipublikasikan sesuai format melalui dua media.<br />
+                5. Dipublikasikan sesuai format melalui tiga atau lebih media.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">10%</td>
+
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/17bWg6BOtspOvNSpc5eyfw70I-fgf9xMO?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/7.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 8 -->
+            <tr>
+              <td class="bg-warning">8</td>
+              <td class="bg-warning">a.P</td>
+              <td class="bg-warning">
+                Persentase tindak lanjut hasil SKM yang ditindaklanjuti.
+              </td>
+              <td class="bg-warning">
+                0. Tidak dilakukan monev SP.<br />
+                1. Dilakukan monev sebagian jenis layanan.<br />
+                2. Dilakukan monev seluruh jenis layanan tanpa tindak lanjut.<br />
+                3. Dilakukan monev seluruh jenis layanan dengan tindak lanjut
+                sebagian.<br />
+                4. Dilakukan monev seluruh jenis layanan dengan tindak lanjut
+                mayoritas hasil monev.<br />
+                5. Dilakukan monev seluruh jenis layanan dengan tindak lanjut
+                keseluruhan hasil monev.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">11%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1EJdPhMwBzjq-bibW7McRAipO_laq_oju?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/8.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- Indikator 9 -->
+            <tr>
+              <td class="bg-warning">9</td>
+              <td class="bg-warning">a.Ak</td>
+              <td class="bg-warning">
+                Kecepatan tindak lanjut hasil SKM seluruh jenis pelayanan
+              </td>
+              <td class="bg-warning">
+                0. Tidak ada tindak lanjut dari hasil monev.<br />
+                1. Ada tindak lanjut pada 1 layanan.<br />
+                2. Ada tindak lanjut pada 2 layanan.<br />
+                3. Ada tindak lanjut pada 3 layanan.<br />
+                4. Ada tindak lanjut pada mayoritas layanan.<br />
+                5. Ada tindak lanjut pada seluruh jenis layanan dan
+                terdokumentasi.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">10%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1swtNhDgvel1nkHFEP5rAS2ZHG4Di0FwA?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/9.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-danger"></td>
+            </tr>
+            <tr class="subaspect-title">
+              <td colspan="9">
+                Aspek <span class="aspect-title">Profesionalisme SDM</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-secondary text-white">
+                II.PROFESIONALISME SDM(5indikator, 3 Prinsip)
+              </td>
+            </tr>
+
+            <!-- Indikator 2 -->
+            <tr>
+              <td class="bg-warning">10</td>
+              <td class="bg-warning">b.As</td>
+              <td class="bg-warning">
+                Tersedia waktu pelayanan yang memudahkan pengguna layanan.
+              </td>
+              <td class="bg-warning">
+                0 Tidak memiliki kebijakan jam pelayanan /kerja . <br />
+                1. Memiliki kebijakan jam pelayanan /kerja . <br />
+                2. Memiliki kebijakan jam pelayanan /kerja dan 1 unsur lainnya .
+                <br />
+                3. Memiliki kebijakan jam pelayanan /kerja dan 2 unsur lainnya .
+                <br />
+                4. Memiliki kebijakan jam pelayanan /kerja dan 3 unsur lainnya .
+                <br />
+                5. Memiliki kebijakan jam pelayanan /kerja dan 4 atau lebih
+                unsur lainnya ."
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">10%</td>
+              <!-- MERGED START -->
+              <td
+                class="text-center align-middle bg-secondary text-white fw-bold"
+                rowspan="5"
+                style="font-size: 24px"
+              >
+                25%
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1TbN2qHFHnSyqRjcAiT0YOWDchwUVJm5l?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <!-- MERGED END -->
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/10.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">11</td>
+              <td class="bg-warning">b.K</td>
+              <td class="bg-warning">
+                Tersedia Kode Etik dan Kode Perilaku Pelaksana dan/atau Budaya
+                Pelayanan di lingkungan instansi
+              </td>
+              <td class="bg-warning">
+                0 Tidak tersedia aturan kode etik dan kode perilaku . <br />
+                1 . Aturan kode etik dan kode perilaku Pelaksana Pelayanan hanya
+                meliputi nilai dasar hak dan kewajiban . <br />
+                2 . Aturan kode etik dan kode perilaku Pelaksana Pelayanan
+                meliputi nilai dasar hak kewajiban dan 1 (satu ) unsur lainnya .
+                <br />
+                3 . Aturan kode etik dan kode perilaku Pelaksana Pelayanan
+                meliputi nilai dasar hak dan kewajiban dan 2 (dua) unsur lainnya
+                . <br />
+                4 . Aturan kode etik dan kode perilaku Pelaksana Pelayanan
+                meliputi nilai dasar hak dan kewajiban dan 3 (tiga ) unsur
+                lainnya . <br />
+                5 . Aturan kode etik dan kode perilaku Pelaksana Pelayanan
+                meliputi nilai dasar hak dan kewajiban dan 4 (empat ) unsur
+                lainnya .
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1DR7nU-I-RN2Y0FcJRyQNlcKzny9a5E-j?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/11.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="bg-warning">12</td>
+              <td class="bg-warning">b.Ak</td>
+              <td class="bg-warning">
+                Tersedia mekanisme yang dibangun untuk menjaga dan meningkatkan
+                motivasi kerja Pelaksana pelayanan.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia mekanisme peningkatan motivasi kerja.<br />
+                1. Tersedia 1 jenis mekanisme peningkatan motivasi kerja.<br />
+                2. Tersedia 2 jenis mekanisme peningkatan motivasi kerja.<br />
+                3. Tersedia 3 jenis mekanisme peningkatan motivasi kerja.<br />
+                4. Tersedia 4 jenis mekanisme peningkatan motivasi kerja.<br />
+                5. Tersedia lebih dari 4 jenis mekanisme peningkatan motivasi
+                kerja.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/10hkHWtxSQrEMcSvEA7Z2LFlfwcFB6TDP?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/12.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">13</td>
+              <td class="bg-warning">b.K</td>
+              <td class="bg-warning">
+                Tersedia kriteria pemberian penghargaan bagi pegawai yang
+                berprestasi.
+              </td>
+              <td class="bg-warning">
+                0. Tidak ada pemberian penghargaan.<br />
+                1. Ada pemberian penghargaan berdasarkan 1–2 unsur kecuali
+                kinerja.<br />
+                2. Ada pemberian penghargaan berdasarkan 3–5 unsur kecuali
+                kinerja.<br />
+                3. Ada pemberian penghargaan berdasarkan 1–2 unsur termasuk
+                kinerja.<br />
+                4. Ada pemberian penghargaan berdasarkan 3–4 unsur termasuk
+                kinerja.<br />
+                5. Ada pemberian penghargaan berdasarkan 5–6 unsur termasuk
+                kinerja.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1tVTQJj1w5X6IgTwrOHX4iu37jioY3qA3?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/13.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">14</td>
+              <td class="bg-warning">b.K</td>
+              <td class="bg-warning">
+                Tersedia pelaksana yang menerapkan budaya pelayanan.
+              </td>
+              <td class="bg-warning">
+                0. Tidak menerapkan budaya layanan.<br />
+                1. Pelaksana pelayanan menerapkan 1 (satu) unsur budaya
+                pelayanan.<br />
+                2. Pelaksana pelayanan menerapkan 2 (dua) unsur budaya
+                pelayanan.<br />
+                3. Pelaksana pelayanan menerapkan 3 (tiga) unsur budaya
+                pelayanan.<br />
+                4. Pelaksana pelayanan menerapkan 4 (empat) unsur budaya
+                pelayanan.<br />
+                5. Pelaksana pelayanan menerapkan 5 (lima) unsur budaya
+                pelayanan.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">30.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1BIA71hozIoaLa4eN4isEvmN1zX28uS0B?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/14.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-danger"></td>
+            </tr>
+            <tr class="subaspect-title">
+              <td colspan="9">
+                Aspek <span class="aspect-title">Sarana dan Prasarana</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-secondary text-white">
+                III. SARANA DAN PRASARANA (6 indikator, 3 Prinsip)
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">15</td>
+              <td class="bg-warning">c.K</td>
+              <td class="bg-warning">
+                Tersedia tempat parkir dengan fasilitas pendukung yang memadai.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia tempat parkir.<br />
+                1. Tersedia tempat parkir dan memiliki 1 fasilitas parkir.<br />
+                2. Tersedia tempat parkir dan memiliki 2 fasilitas parkir.<br />
+                3. Tersedia tempat parkir dan memiliki 3 fasilitas parkir.<br />
+                4. Tersedia tempat parkir dan memiliki 4 fasilitas parkir.<br />
+                5. Tersedia tempat parkir dan memiliki 5 atau lebih fasilitas
+                parkir.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">15.00%</td>
+              <td
+                class="text-center align-middle bg-secondary text-white fw-bold"
+                rowspan="6"
+                style="font-size: 24px"
+              >
+                18%
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1KgsLn9YmJ4HWuik6tawfw-Vx-B1GVIzH?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/15.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">16</td>
+              <td class="bg-warning">c.As</td>
+              <td class="bg-warning">
+                Tersedia ruang tunggu dengan fasilitas wajib dan pelengkap.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia ruang tunggu.<br />
+                1. Tersedia ruang tunggu dengan 1 fasilitas wajib.<br />
+                2. Tersedia ruang tunggu dengan 2 fasilitas wajib.<br />
+                3. Tersedia ruang tunggu dengan 3 fasilitas wajib.<br />
+                4. Tersedia ruang tunggu dengan 4 fasilitas wajib.<br />
+                5. Tersedia ruang tunggu dengan 5 atau lebih fasilitas wajib.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">23.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/164leMc3QkNT_iEip8nR19E92JxSu-XIL?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/16.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">17</td>
+              <td class="bg-warning">c.As</td>
+              <td class="bg-warning">
+                Tersedia sarana toilet pengguna layanan yang layak pakai.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia fasilitas apapun.<br />
+                1. Tersedia fasilitas wajib.<br />
+                2. Tersedia fasilitas wajib dan 1 fasilitas pelengkap.<br />
+                3. Tersedia fasilitas wajib dan 2 fasilitas pelengkap.<br />
+                4. Tersedia fasilitas wajib dan 3 fasilitas pelengkap.<br />
+                5. Tersedia fasilitas wajib dan 4 atau lebih fasilitas
+                pelengkap.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1k5UzPJyH-JQRMAR0BkVqbQtdwA1xpxL8?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/17.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bg-warning">18</td>
+              <td class="bg-warning">c.K</td>
+              <td class="bg-warning">
+                Tersedia sarana prasarana bagi pengguna layanan kelompok rentan.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia fasilitas bagi kelompok rentan.<br />
+                1. Tersedia fasilitas wajib bagi 1 jenis kelompok rentan.<br />
+                2. Tersedia fasilitas wajib bagi 2 jenis kelompok rentan.<br />
+                3. Tersedia fasilitas wajib bagi 3 jenis kelompok rentan.<br />
+                4. Tersedia fasilitas wajib bagi 4 jenis kelompok rentan.<br />
+                5. Tersedia fasilitas wajib bagi 5 atau lebih jenis kelompok
+                rentan.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1vIhHHWGm7siEY4pNBanR9zZqOT1HRHi1?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/18.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="bg-warning">19</td>
+              <td class="bg-warning">c.As</td>
+              <td class="bg-warning">Tersedia sarana prasarana penunjang.</td>
+              <td class="bg-warning">
+                0. Tidak tersedia sarana prasarana bagi pengguna layanan
+                kelompok rentan. <br />
+                1. Tersedia 1-3 sarana prasarana bagi pengguna layanan kelompok
+                rentan. <br />
+                2. Tersedia 4-6 sarana prasarana bagi pengguna layanan kelompok
+                rentan. <br />
+                3. Tersedia 7-9 sarana prasarana bagi pengguna layanan kelompok
+                rentan. <br />
+                4. Tersedia 10-12 sarana prasarana bagi pengguna layanan
+                kelompok rentan. <br />
+                5. Tersedia 13 atau lebih sarana prasarana bagi pengguna layanan
+                kelompok rentan. rentan.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">11.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/18QOSLM_FDCkqWQkwsQD_iQiAIjaVxv8s?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/19.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="bg-warning">20</td>
+              <td class="bg-warning">c.B</td>
+              <td class="bg-warning">
+                Sarana Front Office (FO) bagian Informasi di unit layanan.
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia fasilitas penunjang. <br />
+                1. Tersedia 1 fasilitas penunjang. <br />
+                2. Tersedia 2 fasilitas penunjang. <br />
+                3. Tersedia 3 fasilitas penunjang. <br />
+                4. Tersedia 4 fasilitas penunjang. <br />
+                5. Tersedia 5 atau lebih fasilitas penunjang."
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">11.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1zLe-KBgGToMVatnn-PqTVrv3x5L8DieN?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/20.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-danger"></td>
+            </tr>
+            <!-- ===== Aspek IV: SIPP ===== -->
+            <tr class="subaspect-title">
+              <td colspan="9">
+                Aspek <span class="aspect-title text-danger fw-bold">SIPP</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-secondary text-white">
+                IV. SIPP (4 indikator, 3 Prinsip)
+              </td>
+            </tr>
+
+            <!-- 21 -->
+            <tr>
+              <td class="bg-warning">21</td>
+              <td class="bg-warning">d.T</td>
+              <td class="bg-warning">
+                Tersedia sistem informasi pelayanan publik untuk informasi
+                publik
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia sistem informasi pelayanan publik baik
+                elektronik maupun non elektronik.<br />
+                1. Tersedia sistem informasi pelayanan publik non elektronik
+                melalui media lisan (pusat informasi).<br />
+                2. Tersedia sistem informasi pelayanan publik non elektronik
+                melalui media lisan dan media cetak (papan pengumuman).<br />
+                3. Tersedia sistem informasi pelayanan publik elektronik namun
+                belum online (e-kiosk/display TV/layar monitor).<br />
+                4. Tersedia sistem informasi pelayanan publik berbasis
+                online/website.<br />
+                5. Sistem informasi pelayanan publik telah online dan terhubung
+                dengan sistem informasi pelayanan publik nasional serta telah
+                menginput layanan yang ditetapkan ke dalam sistem informasi
+                pelayanan publik nasional.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">30.00%</td>
+
+              <!-- rowspan untuk total aspek SIPP -->
+              <td
+                class="text-center align-middle bg-secondary text-white fw-bold"
+                rowspan="4"
+                style="font-size: 24px"
+              >
+                11%
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1NExWxjltayTzgUhOctY86MaDLERJkDqV?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/21.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- 22 -->
+            <tr>
+              <td class="bg-warning">22</td>
+              <td class="bg-warning">d.B</td>
+              <td class="bg-warning">
+                Tersedia sistem informasi pelayanan publik pendukung operasional
+                pelayanan
+              </td>
+              <td class="bg-warning">
+                0. Tidak tersedia sistem informasi pendukung operasional
+                pelayanan publik.<br />
+                1. Tersedia sistem informasi pendukung operasional pelayanan
+                dengan 1 kondisi.<br />
+                2. Tersedia sistem informasi pendukung operasional pelayanan
+                dengan 2 kondisi.<br />
+                3. Tersedia sistem informasi pendukung operasional pelayanan
+                dengan 3 kondisi.<br />
+                4. Tersedia sistem informasi pendukung operasional pelayanan
+                dengan 4 kondisi.<br />
+                5. Tersedia sistem informasi pendukung operasional pelayanan
+                dengan lebih dari 4 kondisi.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1OA2HJ3rwy160dMRQu-oB7K1UkTskWMdB?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/22.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- 23 -->
+            <tr>
+              <td class="bg-warning">23</td>
+              <td class="bg-warning">d.As</td>
+              <td class="bg-warning">
+                Kualitas penggunaan SIPP Elektronik (Website/Aplikasi)
+              </td>
+              <td class="bg-warning">
+                0. SIPP Elektronik tidak terhubung secara daring.<br />
+                1. SIPP Elektronik berbasis website/aplikasi mudah
+                dioperasikan.<br />
+                2. SIPP Elektronik berbasis website/aplikasi mudah dioperasikan,
+                informatif, dan mudah diakses.<br />
+                3. SIPP Elektronik berbasis website/aplikasi mudah dioperasikan,
+                informatif, mudah diakses, dan terintegrasi dengan sistem
+                lainnya.<br />
+                4. SIPP Elektronik berbasis website/aplikasi terintegrasi dengan
+                sistem pelayanan publik nasional.<br />
+                5. SIPP Elektronik berbasis website/aplikasi telah digunakan
+                untuk seluruh layanan dan terintegrasi nasional.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">25.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1aVk6CM-JPrfKYK0v3jLvKK-PQO0bCdmB?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/23.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+
+            <!-- 24 -->
+            <tr>
+              <td class="bg-warning">24</td>
+              <td class="bg-warning">d.T</td>
+              <td class="bg-warning">
+                Pemuktahiran data dan informasi kanal digital
+              </td>
+              <td class="bg-warning">
+                0 Tersedia data dan informasi pelayanan publik yang tidak
+                dimutakhirkan .<br />
+                1 . Pemutakhiran data dan informasi pelayanan publik telah
+                dilakukan secara tahunan .<br />
+                2 .Pemutakhiran data dan informasi pelayanan publik telah
+                dilakukan secara semesteran .<br />
+                3 .Pemutakhiran data dan informasi pelayanan publik secara
+                bulanan .<br />
+                4 .Pemutakhiran data dan informasi pelayanan publik dilakukan
+                secara mingguan .<br />
+                5 .Pemutakhiran data dan informasi pelayanan publik dilakukan
+                secara harian dan detail/sangat lengkap
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">25.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/173zVKAE5CQjrD460eQ_NFJtiHSwfqT2s?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/24.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-danger"></td>
+            </tr>
+            <!-- ===== Aspek IV: Pengaduan ===== -->
+            <tr class="subaspect-title">
+              <td colspan="9">
+                Aspek
+                <span class="aspect-title text-danger fw-bold">
+                  Konsultasi Pengaduan</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-secondary text-white">
+                V. KONSULTASI PENGADUAN (4 indikator, 2 Prinsip)
+              </td>
+            </tr>
+            <!-- 25 -->
+            <tr>
+              <td class="bg-warning">25</td>
+              <td class="bg-warning">e.P</td>
+              <td class="bg-warning">
+                Tersedia sarana konsultasi dan pengaduan secara tatap muka yang
+                berkualitas
+              </td>
+              <td class="bg-warning">
+                0 Tidak tersedia Sarana konsultasi pengaduan pengguna layanan.
+                <br />
+                1. Sarana konsultasi pengaduan pengguna layanan dengan 1
+                kondisi. <br />
+                2. Sarana konsultasi pengaduan pengguna layanan dengan 2
+                kondisi. <br />
+                3. Sarana konsultasi pengaduan pengguna layanan dengan 3
+                kondisi. <br />
+                4. Sarana konsultasi pengaduan pengguna layanan dengan 4
+                kondisi. <br />
+                5. Sarana konsultasi pengaduan pengguna layanan dengan 5 atau
+                lebih kondisi."
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">20.00%</td>
+
+              <!-- rowspan untuk total aspek SIPP -->
+              <td
+                class="text-center align-middle bg-secondary text-white fw-bold"
+                rowspan="4"
+                style="font-size: 24px"
+              >
+                11%
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1qaEiBGVzqpufq1fjiPIHTNJEBzJFbG3Z?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/25.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <!-- 26 -->
+            <tr>
+              <td class="bg-warning">26</td>
+              <td class="bg-warning">e.P</td>
+              <td class="bg-warning">
+                Tersedia sarana dan media konsultasi serta pengaduan yang bisa
+                diamnfaatkan semua lapisan masyarakat
+              </td>
+              <td class="bg-warning">
+                0 Tidak ada sarana dan petugas. <br />
+                1. Hanya terdapat media konsultasi dan pengaduan secara offline
+                menyatu dengan front office. <br />
+                2. Hanya terdapat media konsultasi dan pengaduan secara offline
+                namun terpisah dengan front office. <br />
+                3. Terdapat media konsultasi dan pengaduan secara offline
+                menyatu satu dengan front office dan tersedia secara online.
+                <br />
+                4. Terdapat media konsultasi dan pengaduan secara offline
+                terpisah dari front office, serta tersedia secara online. <br />
+                5. Terdapat media konsultasi dan pengaduan secara offline
+                terpisah dari front office, dan terhubung dengan SP4N-LAPOR!.
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">25.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1_uAa-xCtDn39DuHT_b6QvaRiHEvxXfGS?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/26.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <!-- 27 -->
+            <tr>
+              <td class="bg-warning">27</td>
+              <td class="bg-warning">e.Ak</td>
+              <td class="bg-warning">
+                Tersedia akuntabilitas hasil konsultasi dan/atau pengaduan.
+              </td>
+              <td class="bg-warning">
+                0 Tidak ada dokumentasi. <br />
+                1. Terdapat dokumentasi yang diarsipkan. <br />
+                2. Terdapat dokumentasi yang diarsipkan dan dituangkan dalam
+                laporan. <br />
+                3. Terdapat dokumentasi diarsipkan, dituangkan dalam laporan,
+                dan dilakukan monev. <br />
+                4. Terdapat dokumentasi diarsipkan, dituangkan dalam laporan,
+                dilakukan monev, dan ditindaklanjuti. <br />
+                5. Terdapat dokumentasi diarsipkan, dituangkan dalam laporan,
+                dilakukan monev, ditindaklanjuti, dan dipublikasikan."
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">25.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1ChVGPFhzA0tETeOC-BOqIl_V4hQClbkY?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/27.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <!-- 28 -->
+            <tr>
+              <td class="bg-warning">28</td>
+              <td class="bg-warning">e.Ak</td>
+              <td class="bg-warning">
+                Tersedia tindak lanjut atas konsultasi dan pengaduan dari semua
+                lapisan masyarakat.
+              </td>
+              <td class="bg-warning">
+                0 Tidak ada konsultasi atau pengaduan yang ditindaklanjuti.
+                <br />
+                1. < 50% konsultasi atau pengaduan ditindaklanjuti hingga
+                selesai yang tidak menggunakan SP4N-LAPOR!. <br />
+                2. ≥ 50% konsultasi atau pengaduan ditindaklanjuti hingga
+                selesai yang tidak menggunakan SP4N-LAPOR!. <br />
+                3. < 50% konsultasi atau pengaduan yang masuk ke SP4N-LAPOR! dan
+                ditindaklanjuti hingga selesai. <br />
+                4. ≥ 50% - 90% konsultasi atau pengaduan yang masuk ke
+                SP4N-LAPOR! dan ditindaklanjuti hingga selesai. <br />
+                5. ≥ 90% konsultasi atau pengaduan yang masuk ke SP4N-LAPOR! dan
+                ditindaklanjuti hingga selesai."
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">30.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/19VMGIO8p1nETaVi71E11KaTUgBXBo_Hh?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/28.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-danger"></td>
+            </tr>
+            <!-- ===== Aspek IV: SIPP ===== -->
+            <tr class="subaspect-title">
+              <td colspan="9">
+                Aspek
+                <span class="aspect-title text-danger fw-bold"> Inovasi</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-secondary text-white">
+                VI. INOVASI (2 indikator, 1 Prinsip)
+              </td>
+            </tr>
+            <!-- 29 -->
+            <tr>
+              <td class="bg-warning">29</td>
+              <td class="bg-warning">f.B</td>
+              <td class="bg-warning">Penciptaan Inovasi Pelayanan Publik</td>
+              <td class="bg-warning">
+                0 . Tidak tersedia Inovasi . <br />
+                1. Belum ada inovasi , masih dalam proses pembelajaran
+                berinovasi . <br />
+                2. Sudah ada inovasi namun kurang dari 1 tahun . <br />
+                3. Sudah ada inovasi lebih dari 1 tahun namun belum
+                diikutsertakan dalam kompetisi (level apapun ) . <br />
+                4. Sudah ada inovasi lebih dari 1 tahun dan sudah diikutsertakan
+                dalam kompetisi level apapun . <br />
+                5. Inovasi yang dilaksanakan sudah mendapatkan prestasi pada
+                level (apapun)."
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">50.00%</td>
+
+              <!-- rowspan untuk total aspek SIPP -->
+              <td
+                class="text-center align-middle bg-secondary text-white fw-bold"
+                rowspan="2"
+                style="font-size: 24px"
+              >
+                12%
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/15kEvB3dBPkEto-oGSBSDd4lBTtqZkUzT?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/29.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <!-- 30 -->
+            <tr>
+              <td class="bg-warning">30</td>
+              <td class="bg-warning">f.B</td>
+              <td class="bg-warning">
+                Sumber daya yang mendukung keberlanjutan Inovasi Pelayanan
+                Publik
+              </td>
+              <td class="bg-warning">
+                0 . Belum ada sumber daya yang mendukung keberlanjutan inovasi .
+                <br />
+                1. Sumber daya yang mendukung keberlanjutan inovasi dalam bentuk
+                rancangan payung hukum . <br />
+                2. Sumber daya yang mendukung keberlanjutan inovasi dalam bentuk
+                payung hukum . <br />
+                3. Sumber daya yang mendukung keberlanjutan inovasi dalam bentuk
+                payung hukum dan 1 kondisi lainnya . <br />
+                4. Sumber daya yang mendukung keberlanjutan inovasi dalam bentuk
+                payung hukum dan 2 kondisi lainnya . <br />
+                5. Sumber daya yang mendukung keberlanjutan inovasi dalam bentuk
+                payung hukum dan 3 kondisi lainnya .
+              </td>
+              <td class="text-center align-middle bg-warning">
+                <select class="form-select form-select-sm">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option selected>5</option>
+                </select>
+              </td>
+              <td class="text-center align-middle bg-warning">50.00%</td>
+              <td class="text-center align-middle bg-warning">
+                <a
+                  href="https://drive.google.com/drive/folders/1azdw8j1Gl5bEskJxB0SbUaFi9NWnLFWL?usp=drive_link"
+                  target="_blank"
+                  class="btn btn-success btn-sm rounded shadow"
+                  >Upload/View</a
+                >
+              </td>
+              <!-- rowspan untuk total aspek SIPP -->
+              <td class="text-center align-middle bg-warning">
+                <button
+                  class="btn btn-sm btn-secondary shadow"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pdfModal"
+                  data-file="assets/30.pdf"
+                >
+                  Contoh
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="9" class="bg-danger"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container mt-4 mb-2 text-center">
+      <footer>&copy; 2025 | Puskesmas Trenggalek</footer>
+    </div>
+    <!-- Modal PDF (hanya 1 kali di bawah halaman) -->
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Dokumen Bukti Dukung</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <iframe
+              id="pdfFrame"
+              src=""
+              width="100%"
+              height="600px"
+              style="border: none"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const pdfModal = document.getElementById("pdfModal");
+      pdfModal.addEventListener("show.bs.modal", (event) => {
+        const button = event.relatedTarget; // tombol yang diklik
+        const file = button.getAttribute("data-file"); // ambil path PDF
+        const iframe = pdfModal.querySelector("#pdfFrame");
+        iframe.src = file; // tampilkan file ke iframe
+      });
+
+      // Bersihkan saat modal ditutup
+      pdfModal.addEventListener("hidden.bs.modal", () => {
+        const iframe = pdfModal.querySelector("#pdfFrame");
+        iframe.src = "";
+      });
+    </script>
+  </body>
+</html>
+<script>
+  // 1) Nonaktifkan klik kanan (hanya deterrent)
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    // bisa tampilkan toast/warn jika mau
+    return false;
+  });
+
+  // 2) Blokir beberapa shortcut DevTools / view-source (deterrent)
+  document.addEventListener("keydown", function (e) {
+    // F12
+    if (e.key === "F12") {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+Shift+C
+    if (
+      e.ctrlKey &&
+      e.shiftKey &&
+      (e.key === "I" || e.key === "J" || e.key === "C")
+    ) {
+      e.preventDefault();
+      return false;
+    }
+    if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  // 3) Deteksi kasar DevTools terbuka
+  // Teknik sederhana: perbedaan ukuran window atau melakukan 'debugger' timing.
+  // Ini bukan akurat tapi bisa dipakai untuk peringatan.
+  (function detectDevTools(onOpen, onClose) {
+    let open = false;
+    const threshold = 160; // piksel perbedaan yang dianggap terlaporkan
+    function check() {
+      const widthDiff = window.outerWidth - window.innerWidth;
+      const heightDiff = window.outerHeight - window.innerHeight;
+      const isOpen = widthDiff > threshold || heightDiff > threshold;
+      if (isOpen && !open) {
+        open = true;
+        onOpen();
+      }
+      if (!isOpen && open) {
+        open = false;
+        onClose();
+      }
+    }
+    // cek berkala
+    setInterval(check, 1000);
+  })(
+    function onOpen() {
+      // tindakan saat DevTools "terbuka" (deteksi kasar)
+      console.warn("DevTools terdeteksi — akses lanjutan dibatasi");
+      // contoh: redirect atau sembunyikan konten sensitif
+      // window.location.href = 'about:blank';
+    },
+    function onClose() {
+      console.log("DevTools tertutup");
+    }
+  );
+</script>
